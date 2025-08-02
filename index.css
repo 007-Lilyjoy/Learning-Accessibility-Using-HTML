@@ -1,37 +1,138 @@
+* {
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
-    background-color: #800080;
+    font-family: 'Poppins', sans-serif;
 }
-p {
-    margin: 0;
-    text-align: center;
-    font-size: 18px;
-    background-color: #ff0000;
-    padding-top: 40px;
-    padding-bottom: 40px;
+body {
+    min-width: 900px;
+    line-height: 1.5;
 }
 main {
-    width: 100vw;
-    height: 100vh;
-    color: #0000aa;
+    width: 900px;
+    margin: 0 auto;
 }
-.red {
-    background-color: #ff0000;
+a {
+    color: inherit;
+    text-decoration: none;
 }
-.orange {
-    background-color: #ffa500;
+.icon {
+    font-size: 32px;
 }
-.yellow {
-    background-color: #ffff00;
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
 }
-.green {
-    background-color: #129a0d;
+.logo {
+    display: flex;
+    align-items: center;
 }
-.blue {
-    background-color: #0000ff;
+.logo-text {
+    margin-left: 5px;
 }
-.purple {
-    background-color: #800080;
+.nav-link {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.nav-links {
+    display: flex;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 800px;
+    margin: 120px auto 200px;
+}
+.hero-heading {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+.hero-heading span {
+    color: #007000;
+    font-weight: 700;
+    line-height: 1;
+}
+.hero-text {
+    font-size: 20px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.hero-image {
+    max-width: 350px;
+    position: absolute;
+    right: -20px;
+    top: -50px;
+    z-index: -1;
+}
+.hero-link {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    width: 100px;
+}
+
+/* About Section */
+.about-section {
+    background-color: rgba(255, 255, 255, 0)
+    background-image:url(images/clouds.jpg);
+    background-size: cover;
+    display:flex:
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #333333;
+}
+.about-heading {
+    margin: 0;
+    font-size: 48px;
+}
+.about span {
+    color: #007000;
+}
+.about-link {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about a {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333333;
+    margin-top: 100px;
+}
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 800px;
+    color: #ffffff;
+}
+.social-links p {
+    display: inline;
+    font-size: 16px;
+}
+.social-links ion-icon {
+    padding-right: 10px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
 }
